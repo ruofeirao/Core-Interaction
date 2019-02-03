@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    margin-left: 2vmin;
+}
+
+#main {
+    margin: -1.8vmin 0 0 3vmin;
+}
+
+ul{
+    list-style-type: none;
+    float: left;
+}
+
+#mainimages {
+    width: 33vmin;
+    height: 22vmin;
+    border-radius: 2vmin;
+}
+
+#mainimages:hover {
+    padding: 5px;
+    border: 3px solid #ffffff;
+    margin: -8px 0 0 -8px;
+}
+
+/* The flip box container - set the width and height to whatever you want. */
+.flip-box-row1, .flip-box-row2, .flip-box-row3{
+    margin-top: 7.7vmin;
+    margin-left: 6vmin;
+    background-color: transparent;
+    width: 33vmin;
+    height: 22vmin;
+    /* cursor: pointer; */
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; 
+    /* Remove this if you don't want the 3D effect */
+    transform-origin: center;
+  }
+  
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-box-row1:hover .flip-box-inner,
+.flip-box-row2:hover .flip-box-inner,
+.flip-box-row3:hover .flip-box-inner {
+    /* cursor: pointer; */
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-box-front, .flip-box-back-good, .flip-box-back-bad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+/* Style the back side */
+.flip-box-back-good, .flip-box-back-bad {
+    transform: rotateY(180deg);
+}
+
+#white {
+    width: 6vmin;
+    height: 4vmin;
+    margin: 3vmin 0 0 8vmin;
+    position: absolute;
+}
+
+#white:hover {
+    width: 7.5vmin;
+    height: 5vmin;
+    margin: 3vmin 0 0 6.5vmin;
+    position: absolute;
+    cursor: pointer;
+}
+
+#index {
+    width: 5vmin;
+    height: 5vmin;
+    margin: 93vmin 0 0 -181vmin;
+    position: absolute;
+}
+
+#index:hover {
+    width: 6vmin;
+    height: 6vmin;
+    margin: 92vmin 0 0 -181vmin;
+    position: absolute;
+    cursor: pointer;
+}

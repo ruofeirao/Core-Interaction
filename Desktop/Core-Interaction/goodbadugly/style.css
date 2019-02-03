@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+}
+ 
+img{
+    height: auto;
+    max-width: 100%;
+    width: 90%;
+    padding: 2vmin;
+}
+
+ul{
+    list-style-type: none;
+    padding: 8px 8px 8px 8px;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vmin;
+}
+
+.list__column--1,
+.list__column--2,
+.list__column--3,
+.list__column--4{
+    float: left;
+}
+
+ul li a img:hover {
+    opacity: 0.8;
+}
+
+#green{
+    background-color: green;
+    width: 10vmin;
+    height: 10vmin;
+    position: absolute;
+}
+

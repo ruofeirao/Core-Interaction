@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0;
+    background-color: black;
+}
+#smiley {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 40%;
+}
+
+#smiley:hover {
+    width: 160px;
+	height: 160px;
+}
+
+#angery {
+    width: 150px;
+	height: 150px;
+	position: absolute;
+    border-radius: 40%;
+}
+
+#angery:hover {
+    width: 160px;
+	height: 160px;
+}
+
+</style>
+    <title>The Good, Bad, and Ugly</title>
+    <link rel="icon" href="halfwhite.png">
+</head>
+<body>
+
+   <a href="test5.html"><img id="angery" src="angery.png"></a>
+   <a href="test5.html"><img id="smiley" src="smiley.png"></a>
+
+</body>
+<script>
+
+var x = 0;
+var y = 0;
+var width = 150;
+var height = 150;
+var speed = 4;
+var x_change = speed;
+var y_change = speed;
+
+function game_loop(){
+	x = x + x_change;
+    y = y + y_change;
+    // document.getElementsByClassName().style.left = x + "px";
+    // document.getElementsByClassName().style.top = y + "px";
+	document.getElementById("angery").style.left = x + "px";
+	document.getElementById("angery").style.top = y + "px";
+	// these numbers are the width and height of the div circle
+	if (x > window.innerWidth - height){
+		x_change = -speed * Math.random();
+	}
+	if (y > window.innerHeight - height){
+		y_change = -speed * Math.random();
+	}
+	// these numbers are the pixel numbers on the body of the page
+	if (x < 0){
+		x_change = speed * Math.random();
+	}
+	if (y < 0){
+		y_change = speed * Math.random();
+	}
+}
+
+// here is how you run a function - just type the function name with ();
+// game_loop();
+
+// here is how you run a function on a loop infinite times
+// 1000 is one second / the number of times a second, i.e. its 60 times a second here
+setInterval(game_loop, 1000/60)
+
+var a = 0;
+var b = 0;
+var widthh = 150;
+var heightt = 150;
+var speed = 4;
+var a_change = speed;
+var b_change = speed;
+
+function game_loop1(){
+	a = a + a_change;
+    b = b + b_change;
+    // document.getElementsByClassName().style.left = x + "px";
+    // document.getElementsByClassName().style.top = y + "px";
+	document.getElementById("smiley").style.left = a + "px";
+	document.getElementById("smiley").style.top = b + "px";
+	// these numbers are the width and height of the div circle
+	if (a > window.innerWidth - heightt){
+		a_change = -speed * Math.random();
+	}
+	if (b > window.innerHeight - heightt){
+		b_change = -speed * Math.random();
+	}
+	// these numbers are the pixel numbers on the body of the page
+	if (a < 0){
+		a_change = speed * Math.random();
+	}
+	if (b < 0){
+		b_change = speed * Math.random();
+	}
+}
+
+// here is how you run a function - just type the function name with ();
+// game_loop();
+
+// here is how you run a function on a loop infinite times
+// 1000 is one second / the number of times a second, i.e. its 60 times a second here
+setInterval(game_loop1, 1000/60)
+
+</script>
+</html>
