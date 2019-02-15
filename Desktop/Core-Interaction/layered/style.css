@@ -1,0 +1,236 @@
+html, body {
+    background-color: black;
+    margin: 0;
+    height: 100in;
+}
+
+.winter-elements {
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#winter-background {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#winter-mountains {
+    z-index: 1;
+    width: 75%;
+    height: 75%;
+}
+
+#winter-foreground {
+    z-index: 2;
+    width: 75%;
+    height: 75%;
+    display: block;
+}
+
+#winter-snow {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+    display: none;
+    transition: opacity 3s ease-in-out 2s;
+}
+
+/* #winter-snow {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+} */
+
+.snow-hover {
+    position: absolute;
+}
+
+.snow-hover:hover #winter-foreground {
+    display: none;
+    transition: opacity 3s ease-in-out 2s;
+}
+
+.snow-hover:hover #winter-snow {
+    display: block;
+    opacity: 1;
+}
+
+.spring-elements {
+    margin-top: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#spring-sky {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#spring-clouds {
+    z-index: 1;
+    width: 75%;
+    height: 75%;
+}
+
+#spring-mountains {
+    z-index: 2;
+    width: 75%;
+    height: 75%;
+}
+
+#spring-whole-grass {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+}
+
+#spring-flowers {
+    z-index: 4;
+    width: 75%;
+    height: 75%;
+    display: block;
+}
+
+#spring-flowers-gif {
+    z-index: 5;
+    width: 75%;
+    height: 75%;
+    display: none;
+}
+
+.flowers-hover {
+    position: absolute;
+}
+
+.flowers-hover:hover #spring-flowers {
+    display: none;
+}
+
+.flowers-hover:hover #spring-flowers-gif {
+    display: block;
+}
+
+.summer-elements {
+    margin-top: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#summer-sky {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#summer-mountains {
+    z-index: 1;
+    width: 75%;
+    height: 75%;
+}
+
+#summer-waves {
+    z-index: 2;
+    width: 75%;
+    height: 75%;
+}
+
+#summer-sand {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+}
+
+#summer-sun {
+    z-index: 4;
+    width: 75%;
+    height: 75%;
+    display: block;
+}
+
+#summer-sun-hover {
+    z-index: 5;
+    width: 75%;
+    height: 75%;
+    display: none;
+}
+
+.sun-hover {
+    position: absolute;
+}
+
+/* .hover-corner #summer-sun{
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+} */
+
+.sun-hover:hover #summer-sun{
+    display: none;
+}
+
+.sun-hover:hover #summer-sun-hover{
+    display: block;
+}
+
+.autumn-elements {
+    margin-top: 400vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#autumn-sky {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#autumn-back-trees {
+    z-index: 1;
+    width: 75%;
+    height: 75%;
+}
+
+#autumn-pathway {
+    z-index: 2;
+    width: 75%;
+    height: 75%;
+}
+
+#autumn-front-trees {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+}
+
+
+
+<div
+data-aos="fade-up"
+data-aos-offset="200"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-mirror="true"
+data-aos-once="false"
+data-aos-anchor-placement="top-center"
+>
+</div>
+
+body[data-aos-duration='4000'] [data-aos],
+  [data-aos][data-aos][data-aos-duration='4000'] {
+    transition-duration: 4000ms;
+  }
