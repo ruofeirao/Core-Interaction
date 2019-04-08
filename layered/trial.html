@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+    
+    <div class="spacer-s2"></div>
+    <div id="trigger" class="spacer s0"></div>
+    <div id="animate" class="box1 blue">
+        <p>Now you see me...</p>
+        <!-- <a href="#" class="viewsource">view source</a> -->
+    </div>
+    <div class="spacer s2"></div>
+
+<script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+                        // trigger a velocity opaticy animation
+                        .setVelocity("#animate", {opacity: 0}, {duration: 400})
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+
+</script>
+
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+</body>
+</html>

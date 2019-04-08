@@ -1,0 +1,625 @@
+html, body {
+    background-color: black;
+    margin: 0;
+    height: 160.5in;
+}
+
+.month-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.932);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    height: 100%;
+    margin: 0;
+}
+
+.panel {
+    height: 100vh;
+    width: 100%;
+}
+
+#january-background {
+    background-color: rgb(50, 81, 102);
+    width: 100%;
+    height: 600vh;
+    margin-bottom: 300vh;
+}
+
+.january {
+    margin: 0;
+    /* background-color: rgb(50, 81, 102); */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.blank {
+    margin: 0;
+    /* background-color: rgb(108, 141, 163); */
+    background-color: rgb(31, 61, 82);
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 200vh;
+}
+
+#winter
+
+.winter-elements {
+    top: 300vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#winter-background {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#winter-mountains {
+    z-index: 1;
+    width: 90%;
+    height: 90%;
+}
+
+#winter-foreground {
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+}
+
+#winter-snow {
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+}
+
+#winter-snow-gif {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+    display: none;
+    border: 1px solid white;
+}
+
+#invisible-div-winter {
+    z-index: 5;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+}
+
+#winter-left {
+    background-color: rgb(50, 81, 102);
+    width: 5%;
+    height: 110%;
+    margin-left: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+}
+
+#winter-right {
+    background-color: rgb(50, 81, 102);
+    width: 5%;
+    height: 110%;
+    right: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+}
+
+#snowww-mp3 {
+    position: relative;
+    top: 190vh;
+    left: 12%;
+    opacity: 0.2;
+}
+
+.snow-hover {
+    position: absolute;
+    cursor: url(winter/snowball.png), pointer;
+}
+
+.snow-hover:hover #winter-snow {
+    display: none;
+}
+
+.snow-hover:hover #winter-snow-gif {
+    display: block;
+}
+
+#snowstorm-mp3 {
+    position: relative;
+    margin-top: 200px;
+    left: 12%;
+    opacity: 0.1;
+}
+
+.february {
+    margin-top: 400vh;
+    background-color: rgb(93, 162, 167);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* .february {
+    margin-top: 300vh;
+} */
+
+.feb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+.march {
+    margin-top: 0;
+    /* background-color: rgb(70, 143, 100); */
+    background-color: rgb(2, 39, 18);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* .march {
+    margin-top: 100vh;
+} */
+
+#march-background {
+    background-color: rgb(2, 39, 18);
+    width: 100%;
+    height: 700vh;
+    margin: 0;
+    z-index: 0;
+    position: absolute;
+}
+
+.spring-elements {
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#spring-sky {
+    z-index: 0;
+    width: 75%;
+    height: 75%;
+}
+
+#spring-clouds {
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+}
+
+#spring-mountains {
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+}
+
+#spring-whole-grass {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+}
+
+#spring-flowers {
+    z-index: 5;
+    width: 90%;
+    height: 90%;
+}
+
+#spring-flowers-gif {
+    z-index: 6;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+#invisible-div-spring {
+    z-index: 7;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+}
+
+#spring-left {
+    background-color: rgb(2, 39, 18);
+    width: 5%;
+    height: 110%;
+    left: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 8;
+}
+
+#spring-right {
+    background-color: rgb(2, 39, 18);
+    width: 5%;
+    height: 110%;
+    right: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 8;
+}
+
+.flowers-hover {
+    position: absolute;
+    cursor: url(spring/flower.png), pointer;
+}
+
+.flowers-hover:hover #spring-flowers {
+    display: none;
+}
+
+.flowers-hover:hover #spring-flowers-gif {
+    display: block;
+}
+
+#meadows-mp3 {
+    position: relative;
+    top: 190vh;
+    left: 12%;
+    opacity: 0.2;
+}
+
+.april {
+    margin-top: 400vh;
+    background-color: rgb(99, 167, 93);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .april {
+    margin-top: 300vh;
+} */
+
+.may {
+    margin-top: 0vh;
+    background-color: rgb(153, 185, 36);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .may {
+    margin-top: 100vh;
+} */
+.june {
+    margin-top: 0vh;
+    background-color: rgb(88, 59, 20);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .june {
+    margin-top: 100vh;
+} */
+
+#june-background {
+    background-color: rgb(88, 59, 20);
+    width: 100%;
+    height: 500vh;
+    margin: 0;
+    z-index: 0;
+    position: absolute;
+}
+
+.summer-elements {
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#summer-sky {
+    z-index: 0;
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+
+#summer-mountains {
+    z-index: 1;
+    width: 90%;
+    height: 90%;
+}
+
+#summer-waves {
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+}
+
+#summer-sand {
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+}
+
+#summer-sun {
+    z-index: 4;
+    width: 75%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+}
+
+#summer-sun-hover {
+    z-index: 5;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+#invisible-div-summer {
+    z-index: 6;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+
+#summer-left {
+    background-color: rgb(88, 59, 20);
+    width: 5%;
+    height: 110%;
+    left: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 7;
+}
+
+#summer-right {
+    background-color: rgb(88, 59, 20);
+    width: 5%;
+    height: 110%;
+    right: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 7;
+}
+
+.sun-hover {
+    position: absolute;
+    cursor: url(summer/suncursor1.png), pointer;
+}
+
+.sun-hover:hover #summer-sun{
+    display: none;
+}
+
+.sun-hover:hover #summer-sun-hover{
+    display: block;
+    
+}
+
+#background-div {
+    position: absolute;
+    background-color: rgb(117, 85, 14);
+    z-index: 0;
+    width: 100vh;
+    height: 100vh;
+}
+
+#waves-mp3 {
+    position: relative;
+    top: 190vh;
+    left: 12%;
+    opacity: 0.2;
+}
+
+.july {
+    margin-top: 400vh;
+    background-color: rgb(214, 187, 65);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .july {
+    margin-top: 300vh;
+} */
+
+.august {
+    margin-top: 0vh;
+    background-color: rgb(224, 132, 28);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .august {
+    margin-top: 100vh;
+} */
+
+.september {
+    margin-top: 0vh;
+    background-color: rgb(75, 19, 5);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .september {
+    margin-top: 100vh;
+} */
+
+#september-background {
+    background-color: rgb(75, 19, 5);
+    width: 100%;
+    height: 400vh;
+    margin: 0;
+    z-index: 0;
+    position: absolute;
+}
+
+.autumn-elements {
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#autumn-sky {
+    z-index: 0;
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+}
+
+#autumn-back-trees {
+    z-index: 1;
+    width: 90%;
+    height: 90%;
+}
+
+#autumn-pathway {
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+}
+
+#autumn-front-trees {
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+}
+
+#autumn-leaves {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+#invisible-div-autumn {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+
+#autumn-left {
+    background-color: rgb(75, 19, 5);
+    width: 5%;
+    height: 110%;
+    left: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+}
+
+#autumn-right {
+    background-color: rgb(75, 19, 5);
+    width: 5%;
+    height: 110%;
+    right: 0;
+    margin-top: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+}
+
+.autumn-hover {
+    position: absolute;
+    cursor: url(autumn/leaf.png), pointer;
+}
+
+.autumn-hover:hover #autumn-front-trees {
+    display: none;
+}
+
+.autumn-hover:hover #autumn-leaves {
+    display: block;
+}
+
+#forest-mp3 {
+    position: relative;
+    top: 190vh;
+    left: 12%;
+    opacity: 0.2;
+}
+
+.october {
+    margin-top: 400vh;
+    background-color: rgb(90, 3, 3);
+    width: 100%;
+    height: 100vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .october {
+    margin-top: 300vh;
+} */
+
+.november {
+    /* margin-top: 0vh; */
+    background-color: rgba(145, 84, 24, 0.452);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0vh;
+    /* margin-bottom: 400px; */
+    position: relative;
+    opacity: 1;
+}
+/* .november {
+    margin-top: 100vh;
+} */
+
+.december {
+    background-color: rgb(1, 51, 128);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    /* margin-bottom: 400px; */
+    position: relative;
+}
+/* .december {
+    margin-top: 100vh;
+} */
+
+
+<div
+data-aos="fade-up"
+data-aos-offset="200"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-mirror="true"
+data-aos-once="false"
+data-aos-anchor-placement="top-center"
+>
+</div>
+

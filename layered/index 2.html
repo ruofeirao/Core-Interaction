@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Layered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="panel">
+        <div id="january-background">
+            <h1 class="january month-titles">January...</h1>
+        </div>
+    </div>
+    <div class="panel">
+        <h1 class="blank month-titles"></h1>
+    </div>
+
+    <div id="winter">
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center" class="winter-elements">
+            <img id="winter-background" src="winter/background.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center" class="winter-elements">
+            <img id="winter-mountains" src="winter/mountains.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="top-center" class="winter-elements">
+            <img id="winter-foreground" src="winter/foreground.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-center" class="winter-elements snow-hover">
+            <img id="winter-snow" src="winter/snowww.png">            
+            <img id="winter-snow-gif" src="winter/snowww.gif">
+            <div id="invisible-div-winter" onmouseover="play_snow_audio()" onmouseout="stop_snow_audio()"></div>
+        </div>
+        <div id="winter-left"></div>
+        <div id="winter-right"></div>
+    </div>
+
+    <div id="snowww-mp3">
+        <!-- <audio controls loop id="snow-audio"> -->
+        <audio loop id="snow-audio">
+            <source src="snowww.mp3" type="audio/mpeg" autostart="false" loop="true">
+        </audio>
+    </div>
+
+    <div class="panel february">
+        <h1 class="month-titles feb" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">February</h1>
+    </div>
+    <div class="panel march">
+        <h1 class="month-titles mar" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">March...</h1>
+    </div>
+    <div id="march-background"></div>
+
+    <!-- <div class="february month-titles">
+        <h1>February</h1>
+    </div>
+    <div class="march month-titles">
+        <h1>March...</h1>
+    </div> -->
+
+    <!-- <div id="spring"> -->
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-center" class="spring-elements">
+            <img id="spring-sky" src="spring/sky.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center" class="spring-elements">
+            <img id="spring-clouds" src="spring/clouds.png">
+        </div>      
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="spring-elements">
+            <img id="spring-mountains" src="spring/mountains.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-center" class="spring-elements">
+            <img id="spring-whole-grass" src="spring/whole-grass.png">
+        </div>
+        <div data-aos="ease-in" data-aos-duration="3000" data-aos-anchor-placement="top-center" class="spring-elements flowers-hover">
+            <img id="spring-flowers" src="spring/flowers.png">
+            <img id="spring-flowers-gif" src="spring/wind-flowers-4.gif">
+            <div id="invisible-div-spring" onmouseover="play_spring_audio()" onmouseout="stop_spring_audio()"></div>
+        </div>
+        <div id="spring-left"></div>
+        <div id="spring-right"></div>
+
+        <div id="meadows-mp3">
+            <!-- <audio controls loop id="spring-audio"> -->
+            <audio loop id="spring-audio">
+                <source src="meadows.mp3" type="audio/mpeg" autostart="false" loop="true">
+            </audio>
+        </div>
+       
+    <!-- </div> -->
+
+    <div class="panel april">
+        <h1 class="month-titles apr" data-aos="zoom-in-left" data-aos-duration="1500">April</h1>
+    </div>
+    <div class="panel may">
+        <h1 class="month-titles ma" data-aos="zoom-out" data-aos-duration="2000">May</h1>
+    </div>
+    <div class="panel june">
+        <h1 class="month-titles jun" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">June...</h1>
+    </div>
+    <div id="june-background"></div>
+
+    <!-- <div class="april month-titles">
+        <h1>April</h1>
+    </div>
+    <div class="may month-titles">
+        <h1>May</h1>
+    </div>
+    <div class="june month-titles">
+        <h1>June...</h1>
+    </div> -->
+
+    <!-- <div="summer"> -->
+        <div data-aos="fade-in" data-aos-duration="500" data-aos-anchor-placement="top-center" class="summer-elements">
+            <img id="summer-sky" src="summer/sky.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center" class="summer-elements">
+            <img id="summer-mountains" src="summer/mountains.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2750" data-aos-anchor-placement="top-center" class="summer-elements">
+            <img id="summer-waves" src="summer/waves.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-center" class="summer-elements">
+            <img id="summer-sand" src="summer/sand.png">
+        </div>
+        <div data-aos="fade-in" data-aos-duration="2500" data-aos-anchor-placement="top-center" class="summer-elements sun-hover">
+            <img id="summer-sun" src="summer/sun.png">
+            <img id="summer-sun-hover" src="summer/sunny-1.gif">
+            <div id="invisible-div-summer" onmouseover="play_beach_audio()" onmouseout="stop_beach_audio()"></div>
+            <!-- <div id="background-div"></div> -->
+        </div>
+        <div id="summer-left"></div>
+        <div id="summer-right"></div>
+
+        <div id="waves-mp3">
+            <!-- <audio controls loop id="beach-audio"> -->
+            <audio loop id="beach-audio">
+                <source src="beach.mp3" type="audio/mpeg" autostart="false" loop="true">
+            </audio>
+        </div>
+        
+        <!-- <div id="waves-mp3">
+            <embed src="beach.mp3" type="audio/mpeg" 
+            loop="true" autostart="false" />
+        </div> -->
+        
+    <!-- </div> -->
+
+    <div class="panel july">
+        <h1 class="month-titles jul" data-aos="fade-left"
+        data-aos-anchor-placement="top-center" data-aos-duration="1500">July</h1>
+    </div>
+    <div class="panel august">
+        <h1 class="month-titles aug" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="1500">August</h1>
+    </div>
+    <div class="panel september">
+        <h1 class="month-titles sep" data-aos="fade-right"
+        data-aos-anchor-placement="top-center" data-aos-duration="2000">September...</h1>
+    </div>
+    <div id="september-background"></div>
+
+    <!-- <div class="july month-titles">
+        <h1>July</h1>
+    </div>
+    <div class="august month-titles">
+        <h1>August</h1>
+    </div>
+    <div class="september month-titles">
+        <h1>September...</h1>
+    </div> -->
+
+        <!-- <div="autumn"> -->
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center" class="autumn-elements">
+            <img id="autumn-sky" src="autumn/sky.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-center" class="autumn-elements">
+            <img id="autumn-back-trees" src="autumn/back-trees.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1100" data-aos-anchor-placement="top-center" class="autumn-elements">
+            <img id="autumn-pathway" src="autumn/pathway.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-center" class="autumn-elements autumn-hover">
+            <img id="autumn-front-trees" src="autumn/front-trees.png">
+            <img id="autumn-leaves" src="autumn/leaves.gif">
+            <div id="invisible-div-autumn" onmouseover="play_autumn_audio()" onmouseout="stop_autumn_audio()"></div>
+        </div>
+        <div id="autumn-left"></div>
+        <div id="autumn-right"></div>
+
+        <div id="forest-mp3">
+            <!-- <audio controls loop id="autumn-audio"> -->
+            <audio loop id="autumn-audio">
+                <source src="forest.mp3" type="audio/mpeg" autostart="false" loop="true">
+            </audio>
+        </div>
+
+    <!-- </div> -->
+
+    <div class="panel october">
+        <h1 class="month-titles oct" data-aos="zoom-out-right" data-aos-duration="2000">October</h1>
+    </div>
+    <div class="panel november">
+        <h1 class="month-titles nov" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000">November</h1>
+    </div>
+    <div class="panel december">
+        <h1 class="month-titles dec" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2000">December...</h1>
+    </div>
+
+    <!-- <div class="october month-titles">
+        <h1>October</h1>
+    </div>
+    <div class="november month-titles">
+        <h1>November</h1>
+    </div>
+    <div class="december month-titles">
+        <h1>December...</h1>
+    </div> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
