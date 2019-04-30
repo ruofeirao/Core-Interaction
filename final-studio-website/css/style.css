@@ -6,12 +6,6 @@ html, body {
 .UV {
         width: 90%;
         height: 100%;
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* justify-content: space-around;
-        align-items: center;
-        text-align: center; */
-        /* margin: 40px 0; */
 }
 
 .text {
@@ -34,6 +28,7 @@ html, body {
     text-align: center;
     color: white;
     position: relative;
+    /* font-style: italic; */
 }
 
 h1 {
