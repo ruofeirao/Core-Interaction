@@ -38,8 +38,9 @@ html, body {
 
 h1 {
      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-     display: inline-block;
+     display: block;
      margin: auto;
+     text-align: center;
 }
 
 #now {
