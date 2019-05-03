@@ -76,4 +76,17 @@ function change(e){
 	document.getElementById("image").src = image[index];
 }
 
+var left = document.getElementById("left-arrow");
+var right = document.getElementById("right-arrow");
+
 document.onkeydown = change;
+
+right.addEventListener("click", function() {
+    index = (index + 1) % 49;
+    document.getElementById("image").src = image[index];
+});
+
+left.addEventListener("click", function() {
+    index = (((index - 1) % 49) + 49) % 49;
+    document.getElementById("image").src = image[index];
+});
