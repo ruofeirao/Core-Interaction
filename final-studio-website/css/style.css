@@ -39,15 +39,43 @@ h1 {
 }
 
 #now {
-    padding: 10vmin 5vmin 0 10vmin ;
+    padding: 10vmin 5vmin 0 5vmin ;
     color: black;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 #date {
-    padding: 3vmin 10vmin 10vmin 10vmin;
+    padding: 3vmin 10vmin 8vmin 10vmin;
     color: black;
-    font-size: 2em;
+    font-size: 1.7em;
+}
+
+h2 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    display: block;
+    margin: auto;
+    text-align: left;
+    font-size: 2.5em;
+    color: rgb(17, 0, 255);
+    padding: 0 25vw 3vh 25vw;
+}
+
+p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    display: block;
+    margin: auto;
+    text-align: left;
+    font-size: 1.3em;
+    color: rgb(112, 112, 112);
+    padding: 4vh 25vw 0 25vw;
+}
+
+#para3 {
+    /* font-style: italic; */
+}
+
+#para4 {
+    font-weight: 700;
 }
 
 img {
@@ -57,4 +85,5 @@ img {
     margin: 0 auto 60px auto;
     display: block;
     justify-content: center;
+    padding-top: 10vh;
 }
